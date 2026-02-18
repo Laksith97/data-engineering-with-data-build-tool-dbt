@@ -1421,7 +1421,7 @@ For this tutorial, we will introduce how to implement a singular test, the `uniq
 Singular tests are SQL statements that are run and considered a failure if any rows are returned. For this test we will create a file called `violation_codes_revenue.sql`.
 
 ```bash
-❯ touch test/violation_codes_revenue.sql
+❯ touch tests/violation_codes_revenue.sql
 ```
 
 We will add the following SQL code to the  `violation_codes_revenue.sql` file where we will identify any violation code where the total fees are less than or eqaual to $1.
@@ -1454,8 +1454,8 @@ Similar to `Docs Blocks`, we can create jinja functions that can be passed into 
 Note that for simplicity, we are doing a simple `not_null` test that is a repeat of one of the out-of-box tests.
 
 ```bash
-❯ touch test/generic
-❯ touch test/generic/generic_not_null.sql
+❯ mkdir tests/generic
+❯ touch tests/generic/generic_not_null.sql
 ```
 
 ```sql
